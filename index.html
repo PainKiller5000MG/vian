@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIAN</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <!-- CSS -->
+    <!-- Locomotive -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Custom -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <style>
+        @font-face {
+            font-family: 'Azonix';
+            src: url('fonts/AzonixRegular.woff2') format('woff2'),
+                 url('fonts/AzonixRegular.woff') format('woff');
+        }
+        .intro h1 {
+            font-family: 'Azonix', sans-serif;
+        }
+    </style>
+    
+    <!-- Intro -->
+    <section class="intro">
+        <div class="intro_wrapper">
+            <h1 class="inFix">VN</h1>
+            <h1 class="inFill">VN</h1>
+        </div>
+    </section>
+    
+    <!-- fixed canvas cursor -->
+    <div class="canvas-wrapper">
+        <canvas id="fluid"></canvas>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <style>
+        @font-face {
+            font-family: 'Azonix';
+            src: url('fonts/AzonixRegular.woff2') format('woff2'),
+                 url('fonts/AzonixRegular.woff') format('woff');
+        }
+        nav a h2 {
+            font-family: 'Azonix', sans-serif;
+        }
+    </style>
+    
+    <!-- Navbar -->
+    <nav>
+        <div id="container">
+            <a href="index.html">
+                <h2>VIAN</h2>
+            </a>
+    
+            <div class="hamburger">
+                <p>menu</p>
+                <div class="toggle focus" data-magnetic>
+                    <span class="top"></span>
+                    <span class="bottom"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Fullscreen Nav-->
+    <div class="menu">
+        <div id="container">
+            <div class="left">
+                <a href="about.html" data-text='about'>about</a>
+                <a href="works.html" data-text='work'>work</a>
+                <a href="service.html" data-text='services'>services</a>
+                <a href="contact.html" data-text='contact'>contact</a>
+            </div>
+            <div class="right">
+                <a href="mailto:info@vian.com" class="focus">info@vian.com</a>
+                <a href="tel:+011234567890" class="focus">+01 1234567890</a>
+                <div class="social_cnt">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img class="focus" src="assets/instagram.svg" alt="instagram" loading="lazy" data-magnetic>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img class="focus" src="assets/facebook.svg" alt="facebook" loading="lazy" data-magnetic>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank">
+                        <img class="focus" src="assets/linkedin.svg" alt="linkedin" loading="lazy" data-magnetic>
+                    </a>
+                    <a href="https://dribbble.com" target="_blank">
+                        <img class="focus" src="assets/dribble.svg" alt="dribble" loading="lazy" data-magnetic>
+                    </a>
+                    <a href="https://www.behance.net" target="_blank">
+                        <img class="focus" src="assets/behance.svg" alt="behance" loading="lazy" data-magnetic>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu_overlay"></div>
+
+    <!-- Scrollable Content -->
+    <div id="main">
+        <!-- Hero -->   
+        <header class="hero">
+            <div id="container">    
+                <h2 class="focus2">Elevating Vision into Reality.</h2>
+                <p class="smallT">
+                    Transforming Ideas into Digital Art.
+                    Where Imagination Meets Reality,
+                    Your Vision, Our Craftsmanship.
+                    Together, We Build Tomorrow.
+                </p>
+                <a href="works.html" class="btn focus mT2" data-magnetic>
+                    <span>View Woks</span>
+                </a>
+            </div>
+        </header>
+
+        <!-- Reel -->
+        <div id="container">
+            <div class="parallax_img Reels">
+                <video src="assets/vid.mp4" autoplay muted loop preload="none" data-scroll
+                    data-scroll-speed="-1"></video>
+            </div>
+        </div>
+
+        <!-- About -->
+        <section class="about">
+            <div id="container">
+                <div class="heading_cnt">
+                    <div class="heading">
+                        <h1 class="fade">Who <br> We are</h1>
+                        <h1 class="fill">who <br> we are</h1>
+                    </div>
+                    <a href="about.html" class="btn focus" data-magnetic>
+                        <span>About Us</span>
+                    </a>
+                </div>
+                <div class="txt mT2">
+                    <h5>
+                        A team of digital experts dedicated to driving success for our clients through innovative solutions and unwavering commitment to excellence.
+                    </h5>
+                </div>
+                <div class="about_card mT5">
+                    <div class="card" data-scroll data-scroll-speed="1">
+                        <h1>40+</h1>
+                        <h4>Global Happy Clients</h4>
+                    </div>
+                    <div class="card" data-scroll data-scroll-speed="2">
+                        <h1>50+</h1>
+                        <h4>Projects completed</h4>
+                    </div>
+                    <div class="card" data-scroll data-scroll-speed="3">
+                        <h1>30+</h1>
+                        <h4>Team Members</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work -->
+        <section class="work">
+            <div id="container">
+                <div class="heading_cnt">
+                    <div class="heading">
+                        <h1 class="fade">Recent <br> Works</h1>
+                        <h1 class="fill">Recent  <br> Works</h1>
+                    </div>
+                    <a href="works.html" class="btn focus" data-magnetic>
+                        <span>View All</span>
+                    </a>
+                </div>
+                <div class="wrapper mT5">
+                    <div class="col">
+                        <div class="card">
+                            <div class="parallax_img">
+                                <img src="assets/Work/HERO PAGE.png" alt="Aetherial InteriorsX" loading="lazy" data-scroll
+                                    data-scroll-speed="-.8">
+                            </div>
+                            <div class="details mT3">
+                                <h2>Aetherial Interiors</h2>
+                                <p> Branding & Website Design</p>
+                                <a class="btn focus mT2" data-magnetic
+                                    href="https://dribbble.com/shots/23682713-KODAM-Creative-Agency-Website"
+                                    target="_blank">
+                                    <span>View Project</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="parallax_img">
+                                <img src="assets/Work/EATS/VtsPL_m2SV6OG2jXW71sxA (1).webp" alt="Verdant Eats" loading="lazy" data-scroll
+                                    data-scroll-speed="-.8">
+                            </div>
+                            <div class="details mT3">
+                                <h2>Verdant Eats</h2>
+                                <p>Branding & Digital Marketing & Social Media Strategy </p>
+                                <a class="btn focus mT2" data-magnetic
+                                    href="https://dribbble.com/shots/23655060-Sigen-Branding-Part-B" target="_blank">
+                                    <span>View Project</span>
+                                </a>
+                            </div>
+                        </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="parallax_img">
+                                <img src="assets/Work/FULL/New Project (21).png" alt="Mindful Horizons" loading="lazy" data-scroll
+                                    data-scroll-speed="-.8">
+                            </div>
+                            <div class="details mT3">
+                                <h2> Mindful Horizons</h2>
+                                <p>Content Creation & SEO Optimization</p>
+                                <a class="btn focus mT2" data-magnetic
+                                    href="https://dribbble.com/shots/20574894-Gradient-Logo-Design-Whimble"
+                                    target="_blank">
+                                    <span>View Project</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="parallax_img">
+                                <img src="assets/Work/PROJECT A BROADBAND/final all mockup A BROADBAND_11zon.jpg" alt="A Broadband" loading="lazy" data-scroll
+                                    data-scroll-speed="-.8">
+                            </div>
+                            <div class="details mT3">
+                                <h2>A Broadband</h2>
+                                <p>Branding & Logo Design</p>
+                                <a class="btn focus mT2" data-magnetic
+                                    href="https://dribbble.com/shots/23654514-Crackers-Package-Design" target="_blank">
+                                    <span>View Project</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clients -->
+        <section class="clients">
+            <div id="container">
+                <div class="heading_cnt">
+                    <div class="heading">
+                        <h1 class="fade">Our  <br> Offerings</h1>
+                        <h1 class="fill">Our <br> Offerings</h1>
+                    </div>
+                </div>
+                <div class="wrapper mT5">
+                    <h3>
+                        Brand Strategy / Web Development / Digital Marketing / SEO Optimization / Social Media Management / Content Creation / E-commerce Solutions / UI/UX Design / Data Analytics / Email Marketing / Mobile App Development / Video Production / Online Advertising
+
+
+                    </h3>
+                </div>
+            </div>
+<!-- Swiper -->
+<div class="swiper mySwiper mT5">
+    <div class="swiper-wrapper focus">
+        <div class="swiper-slide">
+            <div class="top">
+                <h2>"</h2>
+                <p>
+                    Working with VIAN has been a turning point for our business. They helped us build a strong brand and design an intuitive website and app that truly boosted our online presence.
+                </p>
+            </div>
+            <div class="bottom">
+                <h5>Aarav Sharma</h5>
+                <p>Founder, Tech Startup</p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="top">
+                <h2>"</h2>
+                <p>
+                    Our online platform needed a fresh look, and VIAN delivered exactly that. Their redesign not only modernized our image but also significantly improved our user engagement.
+                </p>
+            </div>
+            <div class="bottom">
+                <h5>Riya Kapoor</h5>
+                <p>Founder, Tech Startup</p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="top">
+                <h2>"</h2>
+                <p>
+                    VIAN understood our vision from the start. They developed a robust digital platform that has greatly enhanced our communication and outreach.
+                </p>
+            </div>
+            <div class="bottom">
+                <h5>Kabir Patel</h5>
+                <p>Founder, Tech Startup</p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="top">
+                <h2>"</h2>
+                <p>
+                    Launching our new product was challenging, but VIAN made the process seamless. Their creative approach and attention to detail in our app and brand identity impressed us immensely.
+                </p>
+            </div>
+            <div class="bottom">
+                <h5>Isha Desai</h5>
+                <p>Founder, Tech Startup</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        <!-- Dribble -->
+        <section class="dribbble">
+            <!-- Marquee -->
+            <div class="marquee">
+                <div id="marquee-container" class="marquee-container">
+                    <h1 class="marquee-text">—
+                        Brand Strategy
+
+                        Web Development
+                        
+                        Digital Marketing
+                        
+                        SEO Optimization
+                        
+                        Social Media Management
+                        
+                        Content Creation
+                        
+                        E-commerce Solutions
+                        
+                        UI/UX Design
+                        
+                        Data Analytics
+                        
+                        Email Marketing
+                        
+                        Mobile App Development
+                        
+                        Video Production
+                        
+                        Online Advertising
+                    </h1>
+                    <h1 class="marquee-text">
+                        Brand Strategy
+
+                        Web Development
+                        
+                        Digital Marketing
+                        
+                        SEO Optimization
+                        
+                        Social Media Management
+                        
+                        Content Creation
+                        
+                        E-commerce Solutions
+                        
+                        UI/UX Design
+                        
+                        Data Analytics
+                        
+                        Email Marketing
+                        
+                        Mobile App Development
+                        
+                        Video Production
+                        
+                        Online Advertising
+                    </h1>
+                </div>
+
+                <div id="marquee-container-reverse" class="marquee-container">
+                    <h1 class="marquee-text-reverse">
+                        Elevating Brands — Driving Innovation — Creating Impact — Elevating Brands — Driving Innovation — Creating Impact —
+
+                    </h1>
+                    <h1 class="marquee-text-reverse">
+                        Elevating Brands — Driving Innovation — Creating Impact — Elevating Brands — Driving Innovation — Creating Impact —
+
+                    </h1>
+                </div>
+            </div>
+
+            <!-- Dribble wrapper -->
+            <div class="wrapper">
+                <div class="content" id="container">
+                    <img src="assets/Work/LOGO OG (2).png" alt="VIAN" loading="lazy">
+                    <h5 class="mT2">
+                        Ready to Elevate Your Brand? Let’s Build Something Extraordinary!
+                    </h5>
+                    <a href="https://dribbble.com" target="_blank" class="btn focus mT2" data-magnetic>
+                        <span>Let’s Connect</span>
+                    </a>
+                </div>
+                <!-- mousemove images -->
+                <img class="dribImg img1" src="assets/Work/98 (1).png" alt="mousemove" loading="lazy">
+                <img class="dribImg img2" src="assets/Work/29 (2).png" alt="mousemove" loading="lazy">
+                <img class="dribImg img3" src="assets/Work/87 (1).png" alt="mousemove" loading="lazy">
+                <img class="dribImg img4" src="assets/Work/34 (1).png" alt="mousemove" loading="lazy">
+                <img class="dribImg img5" src="assets/Work/65 (1).png" alt="mousemove" loading="lazy">
+                <img class="dribImg img6" src="assets/Work/91.png" alt="mousemove" loading="lazy">
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div id="container">
+                <div class="heading_cnt">
+                    <div class="heading">
+                        <h1 class="fade">Let’s Make  <br> It Happen!</h1>
+                        <h1 class="fill">Let’s Make  <br>   It Happen!</h1>
+                    </div>
+                    <a href="contact.html" class="btn focus" data-magnetic>
+                        <span>Contact Us</span>
+                    </a>
+                </div>
+
+                <div class="wrapper focus mT5">
+                    <a href="https://www.instagram.com" target="_blank" class="socialLink">
+                        <h5>Instagram</h5>
+                        <img src="assets/instagram.svg" alt="Instagram" loading="lazy">
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" class="socialLink">
+                        <h5>Facebook</h5>
+                        <img src="assets/facebook.svg" alt="Facebook" loading="lazy">
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" class="socialLink">
+                        <h5>Linkedin</h5>
+                        <img src="assets/linkedin.svg" alt="Linkedin" loading="lazy">
+                    </a>
+                    <a href="https://www.behance.net" target="_blank" class="socialLink">
+                        <h5>Behance</h5>
+                        <img src="assets/behance.svg" alt="Behance" loading="lazy">
+                    </a>
+                    <a href="https://www.dribble.com" target="_blank" class="socialLink">
+                        <h5>Dribble</h5>
+                        <img src="assets/dribble.svg" alt="dribbble" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="copyrights mT2">
+                    <p>©2025 VIAN </p>
+                    <p>Your Vision, Our Expertise — Let's Build a Legacy Together.</p>
+                </div>
+            </div>
+            <div class="full mT5 focus">
+                <h1>VIAN AGENCY</h1>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Scripts -->
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- Locomotive -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom -->
+    <script src="js/main.js" type="module" defer></script>
+</body>
+
+</html>
